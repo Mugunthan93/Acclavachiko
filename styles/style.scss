@@ -1,0 +1,29 @@
+$headerheight: 60px;
+$footerheight: 60px;
+
+body {
+  margin: 0px;
+}
+
+#root {
+  display: grid;
+  height: 100vh;
+}
+
+.layout {
+  height: 100%;
+
+  .header-layout {
+    height: #{$headerheight};
+  }
+
+  .footer-layout {
+    height: #{$footerheight};
+  }
+
+  .content-layout {
+    display: flex;
+    height: calc(100vh - (#{$headerheight} + #{$footerheight}));
+    flex-grow: 1;
+  }
+}
