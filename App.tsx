@@ -1,18 +1,10 @@
 import * as React from 'react';
-import Content from './layout/content';
-import Footer from './layout/footer';
-import Header from './layout/header';
+import AddTransaction from './component/add-transaction';
 import './style.css';
 import './styles/style.scss';
 
 const App = () => {
-  return (
-    <div className="layout">
-      <Header />
-      <Content />
-      <Footer />
-    </div>
-  );
+  return <AddTransaction />;
 };
 
 export default App;
