@@ -13,12 +13,7 @@ import { useEffect, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { CountryService } from '../service/country.service';
 
-type transactionModel = {
-  name: string;
-  amount: string;
-};
-
-const AddTransaction = () => {
+const Register = () => {
   const [countries, setCountries] = useState([]);
     const [showMessage, setShowMessage] = useState(false);
     const [formData, setFormData] = useState({});
@@ -141,4 +136,4 @@ const AddTransaction = () => {
   );
 };
 
-export default AddTransaction;
+export default Register;
